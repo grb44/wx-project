@@ -1,0 +1,14 @@
+<w-swiper list="{{banners}}"/>
+<w-recommend recommends="{{recommends}}"/>
+<w-popular/>
+<w-tab-control titles="{{titles}}"
+bind:tabclick="handleTabClick"
+class="{{isTabFixed ? 'fixed':''}}"
+/>
+
+<w-goods goods="{{goods[currenType].list}}"/>
+
+<w-back-top wx:if="{{showBckTop}}"/>
+
+
+
